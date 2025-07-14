@@ -1,5 +1,5 @@
 import './Dashboard.css'
 
 export function Dashboard() {
-    return <div className='dashboard-container'>Dashboard</div>
+    return <div className='dashboard-container my-14'>Dashboard</div>
 }
