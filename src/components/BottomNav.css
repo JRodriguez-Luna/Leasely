@@ -1,0 +1,6 @@
+.bottom-nav-container {
+    display: flex;
+    position: fixed;
+    font-family: Noto Sans, sans-serif;
+    font-size: 0.75rem;
+}
