@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom"
+import { Outlet, Link, useLocation } from "react-router-dom"
 import { RiDashboard3Line } from "react-icons/ri";
 import { BsPeople } from "react-icons/bs";
 import { MdOutlinePayment } from "react-icons/md";
@@ -6,6 +6,7 @@ import { GiAutoRepair } from "react-icons/gi";
 import "./BottomNav.css"
 
 export function BottomNav() {
+    const location = useLocation()
 
     const navItems = [
         { 
@@ -38,12 +39,15 @@ export function BottomNav() {
                     <ul className="h-full flex justify-evenly items-center">
                         {
                             navItems.map((item, index) => (
-                            <li key={index}  className="w-20 flex flex-col cursor-pointer">
-                                <Link to={item.path} className="flex flex-col items-center">
-                                    {item.icon}
-                                    {item.name}
-                                </Link>
-                            </li>
+                                <li key={index} className={
+                                    `w-20 flex flex-col cursor-pointer hover:scale-110 transition-transform duration-200 ease-in-out 
+                                    ${location.pathname === item.path ? 'text-blue-600' : ''}`}
+                                    >
+                                    <Link to={item.path} className="flex flex-col items-center">
+                                        {item.icon}
+                                        {item.name}
+                                    </Link>
+                                </li>
                             ))
                         }
                     </ul>
