@@ -1,5 +1,5 @@
 import './Dashboard.css'
 
 export function Dashboard() {
-    return <div className='dashboard-container mx-10 my-5'>Dashboard</div>
+    return <div className='dashboard-container min-sm:ml-[16rem] px-10 py-5 '>Dashboard</div>
 }
