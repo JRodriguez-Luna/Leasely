@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import { RiDashboard3Line } from "react-icons/ri";
 import { BsPeople } from "react-icons/bs";
 import { MdOutlinePayment } from "react-icons/md";
@@ -53,7 +53,6 @@ export function BottomNav() {
                     </ul>
                 </nav>
             </div>
-            <Outlet />
         </>
     )
 }
