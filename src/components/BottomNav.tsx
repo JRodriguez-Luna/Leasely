@@ -41,7 +41,7 @@ export function BottomNav() {
                             navItems.map((item, index) => (
                                 <li key={index} className={
                                     `w-20 flex flex-col cursor-pointer hover:scale-110 transition-transform duration-200 ease-in-out 
-                                    ${location.pathname === item.path ? 'text-blue-600' : ''}`}
+                                    ${location.pathname === item.path ? 'text-blue-600' : 'text-gray-500'}`}
                                     >
                                     <Link to={item.path} className="flex flex-col items-center">
                                         {item.icon}

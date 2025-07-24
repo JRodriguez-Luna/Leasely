@@ -8,7 +8,7 @@ export function Header(){
                 <div className="text-xs text-gray-400">Manage your properties and tenants</div>
             </div>
             <div className="flex justify-center items-center gap-2">
-                <div className="flex items-center justify-center w-5 h-5 bg-gray-200 rounded-full cursor-pointer">
+                <div className="flex items-center justify-center w-6 h-6 bg-gray-200 rounded-full cursor-pointer">
                     <MdNotificationsActive className="text-gray-600" />
                 </div>
                 {/* Profile */}
@@ -19,7 +19,7 @@ export function Header(){
                         alt="user-profile"
                     />
                 </div>
-                <div className="flex flex-col items-start">
+                <div className="flex flex-col items-start max-sm:hidden">
                     <div className="text-sm">John Doe</div>
                     <div className="text-xs text-gray-400">Property Manager</div>
                 </div>

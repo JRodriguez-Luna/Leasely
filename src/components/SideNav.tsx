@@ -44,8 +44,8 @@ export function SideNav() {
                             {
                                 navItems.map((item, index) => (
                                     <li key={index} className={
-                                        `w-full h-full flex cursor-pointer  
-                                        ${location.pathname === item.path ? 'bg-sky-100 text-blue-600 border-blue-500 border-l-3' : ''}`
+                                        `w-full h-full flex cursor-pointer
+                                        ${location.pathname === item.path ? 'bg-sky-100 text-blue-600 border-blue-500 border-l-3' : 'text-gray-500'}`
                                     }>
                                         <div className="w-full hover:scale-110 transition-transform duration-200 ease-in-out">
                                             <Link to={item.path} className="flex gap-4 items-center w-full h-full px-6 py-3">
