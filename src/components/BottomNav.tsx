@@ -34,7 +34,7 @@ export function BottomNav() {
     return (
         <>
             {/* container */}
-            <div className="bottom-nav-container flex inset-x-0 bottom-0 min-sm:hidden h-[4.2rem]">
+            <div className="bottom-nav-container flex inset-x-0 bottom-0 sm:hidden h-[4.2rem]">
                 <nav className="w-full">
                     <ul className="h-full flex justify-evenly items-center">
                         {

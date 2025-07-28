@@ -5,7 +5,7 @@ import './Dashboard.css'
 
 export function Dashboard() {
     return (
-        <main className='dashboard-container flex flex-col min-sm:ml-[16rem] px-5 py-5 gap-8'>
+        <main className='dashboard-container h-full flex flex-col sm:ml-46 px-5 py-5 max-sm:mb-22 gap-8'>
             <Header />
             <WelcomeBack />
             <SummaryCard />
