@@ -49,7 +49,7 @@ export function SummaryCard() {
                                 <div className="text-sm text-gray-400">{card.icon}</div>
                                 </div>
                                 <div className="font-semibold text-2xl">{card.data}</div>
-                                {card.text}
+                                <div className="text-sm text-gray-400">{card.text}</div>
                             </div>
                             <div className="flex w-full h-auto items-start justify-end">
                                 <div className={`${card.colorBackground} ${card.colorText} rounded-full text-[.60rem] px-[.4rem] text-center`}>{card.statsText}</div>
