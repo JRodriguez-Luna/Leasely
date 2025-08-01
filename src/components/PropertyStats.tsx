@@ -67,3 +67,5 @@ export function PropertyStats() {
         </div>
     )
 }
+
+// Leave as is for now, move forward to the next component, come back to it once the hwole dash is doen being designed.
