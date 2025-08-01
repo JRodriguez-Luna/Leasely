@@ -41,11 +41,11 @@ export function PropertyStats() {
     return (
         // Container
         <div className="flex flex-wrap justify-between gap-5">
-            <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow">
-            <div>Occupancy</div>
-            <Line 
-                    data={occupancyData}
-                />
+            <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow rounded">
+                <div>Occupancy</div>
+                <Line 
+                        data={occupancyData}
+                    />
             </div>
             <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow">
                 <div>Rent Collection</div>

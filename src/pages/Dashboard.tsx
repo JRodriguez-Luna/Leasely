@@ -2,6 +2,7 @@ import { Header } from '../components/Header'
 import { WelcomeBack } from '../components/WelcomeBack'
 import { SummaryCard } from '../components/SummaryCard'
 import { PropertyStats } from '../components/PropertyStats'
+import { ActivityFeed } from '../components/ActivityFeed'
 import './Dashboard.css'
 
 export function Dashboard() {
@@ -11,6 +12,7 @@ export function Dashboard() {
             <WelcomeBack />
             <SummaryCard />
             <PropertyStats />
+            <ActivityFeed />
         </main>
     )
 }
