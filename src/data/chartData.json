@@ -1,14 +1,20 @@
 [
     {
         "label": "Property 1",
-        "revenue": 1400
+        "collected": 1400,
+        "uncollected": 10000,
+        "missing": 6030
     },
     {
         "label": "Property 2",
-        "revenue": 1700
+        "collected": 2300,
+        "uncollected": 19800,
+        "missing": 4450
     },
     {
         "label": "Property 3",
-        "revenue": 800
+        "collected": 5604,
+        "uncollected": 4980,
+        "missing": 2430
     }
 ]
