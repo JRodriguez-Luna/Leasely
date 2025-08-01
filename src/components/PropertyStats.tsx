@@ -4,7 +4,7 @@ import chartData from "../data/chartData.json"
 
 export function PropertyStats() {
 
-    const data = {
+    const rentCollectionData = {
         labels: chartData.map(data => data.label),
         datasets: [
             {
@@ -27,6 +27,16 @@ export function PropertyStats() {
             }
         ]
     }
+
+    const occupancyData = {
+        labels: chartData.map((data) => data.label), // x-axis
+            datasets: [
+                {
+                    label: "Revenue", // representation of the line
+                    data: chartData.map((data) => data.uncollected), // y-axis
+                }
+            ]
+    }
     
     return (
         // Container
@@ -34,15 +44,7 @@ export function PropertyStats() {
             <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow">
             <div>Occupancy</div>
             <Line 
-                    data={{
-                        labels: chartData.map((data) => data.label), // x-axis
-                        datasets: [
-                            {
-                                label: "Revenue", // representation of the line
-                                data: chartData.map((data) => data.uncollected), // y-axis
-                            }
-                        ]
-                    }}
+                    data={occupancyData}
                 />
             </div>
             <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow">
@@ -59,10 +61,9 @@ export function PropertyStats() {
                         }
                     }
                 }}
-                    data={data}
+                    data={rentCollectionData}
                 />
             </div>
-            {/* Width in li element helps adjust the chart component. */}
         </div>
     )
 }
