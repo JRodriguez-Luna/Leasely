@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Property 1",
+        "revenue": 1400
+    },
+    {
+        "label": "Property 2",
+        "revenue": 1700
+    },
+    {
+        "label": "Property 3",
+        "revenue": 800
+    }
+]

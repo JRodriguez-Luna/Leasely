@@ -1,6 +1,7 @@
 import { Header } from '../components/Header'
 import { WelcomeBack } from '../components/WelcomeBack'
 import { SummaryCard } from '../components/SummaryCard'
+import { PropertyStats } from '../components/PropertyStats'
 import './Dashboard.css'
 
 export function Dashboard() {
@@ -9,6 +10,7 @@ export function Dashboard() {
             <Header />
             <WelcomeBack />
             <SummaryCard />
+            <PropertyStats />
         </main>
     )
 }
