@@ -47,7 +47,7 @@ export function PropertyStats() {
                         data={occupancyData}
                     />
             </div>
-            <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow">
+            <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow rounded">
                 <div>Rent Collection</div>
                 <Bar className="w-auto h-10"
                 options={{
