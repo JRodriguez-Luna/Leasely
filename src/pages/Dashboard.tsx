@@ -3,6 +3,7 @@ import { WelcomeBack } from '../components/WelcomeBack'
 import { SummaryCard } from '../components/SummaryCard'
 import { PropertyStats } from '../components/PropertyStats'
 import { ActivityFeed } from '../components/ActivityFeed'
+import { Footer } from '../components/Footer'
 import './Dashboard.css'
 
 export function Dashboard() {
@@ -13,6 +14,7 @@ export function Dashboard() {
             <SummaryCard />
             <PropertyStats />
             <ActivityFeed />
+            <Footer />
         </main>
     )
 }
