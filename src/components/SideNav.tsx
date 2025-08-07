@@ -33,10 +33,10 @@ export function SideNav() {
     return (
         <>
             {/* Container */}
-            <div className="flex flex-col fixed max-sm:hidden w-3xs h-dvh shadow-lg">
+            <div className="flex flex-col fixed max-sm:hidden w-auto h-dvh shadow-lg text-[0.75rem]">
                 {/* title display */}
                 <div className="flex w-full h-15 justify-center items-center border-b border-b-slate-200 p-5">
-                    <div className="text-3xl text-blue-500">Leasly</div>
+                    <div className="text-3xl text-blue-500">Leasely</div>
                 </div>
                 <div className="flex flex-col h-dvh mt-5">
                     <nav className="w-full">
@@ -44,8 +44,8 @@ export function SideNav() {
                             {
                                 navItems.map((item, index) => (
                                     <li key={index} className={
-                                        `w-full h-full flex cursor-pointer  
-                                        ${location.pathname === item.path ? 'bg-sky-100 text-blue-600 border-blue-500 border-l-3' : ''}`
+                                        `w-full h-full flex cursor-pointer
+                                        ${location.pathname === item.path ? 'bg-sky-100 text-blue-600 border-blue-500 border-l-3' : 'text-gray-500'}`
                                     }>
                                         <div className="w-full hover:scale-110 transition-transform duration-200 ease-in-out">
                                             <Link to={item.path} className="flex gap-4 items-center w-full h-full px-6 py-3">

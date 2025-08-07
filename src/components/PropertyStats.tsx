@@ -1,0 +1,71 @@
+import { Bar, Line } from "react-chartjs-2";
+import { Chart as ChartJS } from "chart.js/auto"
+import chartData from "../data/chartData.json"
+
+export function PropertyStats() {
+
+    const rentCollectionData = {
+        labels: chartData.map(data => data.label),
+        datasets: [
+            {
+                // Collected rent
+                label: 'Collected',
+                data: chartData.map(data => data.collected),
+                backgroundColor: 'rgb(53, 162, 235)',
+            },
+            {
+                // Uncollected rent
+                label: "Uncollected",
+                data: chartData.map(data => data.uncollected),
+                backgroundColor: 'lightgray',
+            },
+            {
+                // Missing/late
+                label: "Missing",
+                data: chartData.map(data => data.missing),
+                backgroundColor: 'rgb(255, 99, 132)',
+            }
+        ]
+    }
+
+    const occupancyData = {
+        labels: chartData.map((data) => data.label), // x-axis
+            datasets: [
+                {
+                    label: "Revenue", // representation of the line
+                    data: chartData.map((data) => data.uncollected), // y-axis
+                }
+            ]
+    }
+    
+    return (
+        // Container
+        <div className="flex flex-wrap justify-between gap-5">
+            <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow rounded">
+                <div>Occupancy</div>
+                <Line 
+                        data={occupancyData}
+                    />
+            </div>
+            <div className="flex flex-1 flex-col w-85 h-auto bg-white p-4 shadow rounded">
+                <div>Rent Collection</div>
+                <Bar className="w-auto h-10"
+                options={{
+                    responsive: true,
+                    scales: {
+                        x: {
+                            stacked: true
+                        },
+                        y: {
+                            stacked: true
+                        }
+                    }
+                }}
+                    data={rentCollectionData}
+                />
+            </div>
+        </div>
+    )
+}
+
+// Leave as is for now, move forward to the next component, come back to it once the hwole dash is doen being designed.

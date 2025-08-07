@@ -34,14 +34,14 @@ export function BottomNav() {
     return (
         <>
             {/* container */}
-            <div className="bottom-nav-container flex inset-x-0 bottom-0 min-sm:hidden h-[4.2rem]">
+            <div className="bottom-nav-container flex inset-x-0 bottom-0 sm:hidden h-[4.2rem]">
                 <nav className="w-full">
                     <ul className="h-full flex justify-evenly items-center">
                         {
                             navItems.map((item, index) => (
                                 <li key={index} className={
                                     `w-20 flex flex-col cursor-pointer hover:scale-110 transition-transform duration-200 ease-in-out 
-                                    ${location.pathname === item.path ? 'text-blue-600' : ''}`}
+                                    ${location.pathname === item.path ? 'text-blue-600' : 'text-gray-500'}`}
                                     >
                                     <Link to={item.path} className="flex flex-col items-center">
                                         {item.icon}

@@ -1,0 +1,20 @@
+[
+    {
+        "label": "Property 1",
+        "collected": 1400,
+        "uncollected": 10000,
+        "missing": 6030
+    },
+    {
+        "label": "Property 2",
+        "collected": 2300,
+        "uncollected": 19800,
+        "missing": 4450
+    },
+    {
+        "label": "Property 3",
+        "collected": 5604,
+        "uncollected": 4980,
+        "missing": 2430
+    }
+]
